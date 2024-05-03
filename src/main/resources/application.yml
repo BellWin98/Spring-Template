@@ -18,6 +18,8 @@ spring:
     properties:
       hibernate:
         format_sql: true # 콘솔창에 출력되는 SQL문을 사람이 보기 편한 형태로 출력
+        default_batch_fetch_size: 500 # 1:N 컬렉션 조회 시 성능 최적화
+    open-in-view: false # 영속성 컨텍스트의 생존 범위를 트랜잭션 범위로 한정
 
   servlet:
     multipart:
