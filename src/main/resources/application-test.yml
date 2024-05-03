@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test # memory DB는 휘발성이라는 특징을 갖는다. 테스트 종료 시 DB 초기화
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
