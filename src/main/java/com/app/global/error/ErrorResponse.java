@@ -22,6 +22,7 @@ public class ErrorResponse {
     }
 
     // dto에서 validation 에러 발생 시 받아줌
+    // Spring이 제공하는 검증 오류를 보관하는 객체
     public static ErrorResponse of(String errorCode, BindingResult bindingResult){
         return ErrorResponse.builder()
                 .errorCode(errorCode)

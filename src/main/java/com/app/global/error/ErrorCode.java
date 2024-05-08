@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 @RequiredArgsConstructor
 public enum ErrorCode {
 
+    TEST(HttpStatus.INTERNAL_SERVER_ERROR, "001", "Business Exception Test")
     ;
 
     ErrorCode(HttpStatus httpStatus, String errorCode, String message){
